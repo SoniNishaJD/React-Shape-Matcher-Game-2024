@@ -1,3 +1,75 @@
+npx create-react-app shape-matcher-game
+cd shape-matcher-game
+shape-matcher-game/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Shape.js
+│   ├── App.js
+│   ├── index.js
+│   └── App.css
+├── node_modules/
+├── package.json
+└── README.md
+=================
+1. public/ Folder
+You don’t need to modify anything here. This folder contains the HTML file (public/index.html) where the React app will be injected.
+
+2. src/ Folder
+This is the folder where you will write most of your code.
+
+Step 3: Modify and Create Files
+1. src/index.js (No changes needed)
+This file is the entry point for your React application, and it’s already set up. It mounts the root React component (App.js) to the DOM.
+=====================
+2. src/App.js (Main Game Logic)
+This is the file where your main game logic will reside.
+=====================
+3. src/components/Shape.js (Shape Component)
+Create a new folder named components inside the src folder. Inside the components folder, create a file named Shape.js. This file will handle the rendering of different shapes.
+=================
+4. src/App.css (Styling)
+You can also style the game to make it visually appealing. Add this to the App.css file.
+========================
+npm start
+==================
+1. Shape Matching:
+Two random shapes (circle, square, triangle) are displayed side by side.
+The player must decide if the shapes are identical or different.
+Players click either the "Match" button if they believe the shapes are the same, or the "No Match" button if they think they are different.
+2. Scoring System:
+The player earns 1 point for each correct answer.
+The score is displayed at the top of the screen and updates in real-time after each round.
+3. Time Limit:
+The player has 30 seconds to score as many points as possible.
+A countdown timer is displayed, indicating the time left for the game.
+Once the time runs out, the game ends and displays the final score.
+4. Game Over Screen:
+When the time is up, the game shows a "Game Over" message along with the player's final score.
+The player cannot continue to click after the game ends, and they will need to refresh the page to play again.
+5. Shape Randomization:
+After each round, the shapes are randomized. This ensures the game remains dynamic and engaging with different combinations of shapes in every round.
+6. Simple and Intuitive UI:
+The game uses a minimal design with clear and large buttons for easy gameplay.
+Shapes are displayed in a large, visible format to ensure players can quickly make decisions.
+Instructions and feedback (such as the score and time remaining) are displayed prominently on the screen.
+7. Responsive Design:
+The game is responsive and adjusts to different screen sizes. Whether on a desktop or mobile, the layout remains functional and user-friendly.
+===============================
+
+shape-matcher-game/
+├── public/
+│   └── index.html  # Default React HTML template
+├── src/
+│   ├── components/ # Custom components
+│   │   └── Shape.js # Shape component that displays different shapes
+│   ├── App.js      # Main game logic and layout
+│   ├── App.css     # Styling for the game
+│   └── index.js    # React app entry point
+├── node_modules/   # Dependencies
+├── package.json    # Project configuration
+└── README.md       # Project documentation
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
